@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Data Sorting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dhaka University A Unit </h1>
+        <h3>Subjectwise Merit List (2023-24) </h3>
+
+        <div class="sort-container">
+            <label for="sortOptions">Sort by:</label>
+            <select id="sortOptions" onchange="sortData()">
+                <option value="department">Department</option>
+                <option value="seat">Seat</option>
+                <option value="firstMerit">First Merit</option>
+                <option value="lastMerit">Last Merit</option>
+                <option value="lmQuota">LM Quota</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Seat</th>
+                    <th>First Merit</th>
+                    <th>Last Merit</th>
+                    <th>LM Quota</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data inserted dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
